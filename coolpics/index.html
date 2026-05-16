@@ -32,6 +32,50 @@
         <img class="desktop" src="norris-sm.jpg" alt="picture">
         <img class="desktop" src="norris-sm.jpg" alt="picture">
         </div>
+        
+        <dialog>
+        <img>
+        <button class="close-viewer">X</button>
+        </dialog>
+
+        <script>
+const body = document.querySelector('body');
+const modal = document.querySelector('dialog');
+const modalImage = modal.querySelector('img');
+const closeButton = modal.querySelector('.close-viewer');
+const menu = document.querySelector('.menu')
+const navbar = document.getElementById('navigation');
+
+
+menu.addEventListener('click', function() {
+    navbar.classList.toggle("show");
+});
+
+body.addEventListener('click', openModal);
+
+function openModal(event) {
+    if (event.target.tagName !== "IMG") {
+    return;
+    }
+
+    console.log(event.target.src);
+    let imageSrc = event.target.src;
+
+    modalImage.src = imageSrc.replace("sm", "full");
+    modal.showModal();
+
+}
+closeButton.addEventListener('click', () => {
+    modal.close();
+});
+
+
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.close();
+    }
+});
+        </script>
 
     </div>
 
