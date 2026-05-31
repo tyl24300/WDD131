@@ -46,58 +46,49 @@ h1 {
 }
 
 .books {
+    display: grid;
+    grid-template-columns: 200px 1fr;
     padding: 1rem;
     border-radius: 10px;
-    max-width: 1500px;
     margin: 20px auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
     gap: 20px;
     align-items: center;
+    max-width: 900px;
 }
 
-.books h2 {
+
+h2 {
     color: #b30059;
     font-size: 1.5rem;
     text-align: center;
-    grid-column: 2/2;
-    grid-row: 1;
-    margin: 0;
+    grid-column: 2;
     font-family: 'Times New Roman', Times, serif;
 }
 
 
-#movie-list {
-    padding: 0 2rem;
-}
-
-
-.books .cover {
-    grid-column: 1/2;
-    grid-row: 1/4;
+.cover {
+    grid-column: 1;
     border-right: 2px solid rgb(203, 128, 15);
-    padding-right: 15px;
-    text-align: right;
+    text-align: left;
 }
 
-.books p {
+
+p {
     padding-left: 20px;
 }
 
-.books img {
+img {
+    grid-column: 2;
     max-width: 100%;
     display: block;
     border-radius: 8px;
     margin: 0 auto;
-    grid-column: 2/3;
-    grid-row: 2;
+    width: 200px;
+    display: block;
 }
 
-
-.books .desc {
-    grid-column: 2/3;
-    grid-row: 3;
-
+.desc {
+    grid-column: 2;
     margin-top: 10px;
     padding-left: 0;
 }
@@ -109,7 +100,7 @@ h1 {
         grid-template-columns: 1fr 1;
     }
 
-    .books .cover {
+    .cover {
     display: inline;
     grid-column: 2/2;
     grid-row: 1;
@@ -117,19 +108,19 @@ h1 {
     border: none;
 }
 
-.books h2 {
+h2 {
     grid-column: 2/2;
     grid-row: 2;
 }
 
-.books img {
+img {
     max-width: 100%;
     margin: 0 auto;
     grid-column: 2/3;
     grid-row: 3;
 }
 
-.books .desc {
+.desc {
     grid-column: 2/3;
     grid-row: 4;
 
