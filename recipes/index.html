@@ -5,9 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Book</title>
-    <link rel="stylesheet" href="recipe.css" />                
+    <link rel="stylesheet" href="recipe.css" />
+    <script defer src="recipes.js"></script>   
   </head>
   <body>
+
+
+<main id="container"></main>
 
 <body>
   <header>
@@ -15,15 +19,19 @@
     <img class="book" src="recipe-book.png" alt="a recipe book">
     <h1>Recipe Book</h1>
     </div>
-    <form class="search-bar">
-      <input type="text" placeholder="Find a recipe">
-      <img class="search" src="search.svg" alt="magnifying glass">
+    <input id="search" type="text" placeholder="Find a recipe">
+    <button id="searchButton" type="button">
+      <img src="search.svg" alt="search">
+    </button>
+
     </form>
 
   </header>
 
-  <main>
-    <section class="media-card">
+</main>
+
+  <main id="recipe-container">
+    <section id="default-card" class="media-card">
       <div class="media-card-image">
         <img src="apple-crisp.jpg" alt="apple crisp">
       </div>
