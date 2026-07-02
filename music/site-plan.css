@@ -1,0 +1,32 @@
+.logo {
+    width: 75px;
+    height: 100px;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.music {
+    width: 500px;
+    height: 400px;
+}
+
+.colored {
+    color: #691E06;
+}
+
+nav a {
+  display: block;
+  float: left;
+  background-color: #691E06;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  padding: 15px;
+  width: 100%;
+}
