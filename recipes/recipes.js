@@ -369,19 +369,6 @@ function difficultyTemplate(rating) {
     return html
   }
 
-// function recipesTemplate(recipe) {
-//     return `<div class="default-card">
-//   <div class="media-card-image">
-//     <img src="${recipe.image}" alt="${recipe.name}">
-//   <div class="media-card-content">
-//       ${tagTemplate(recipe.tags)}
-//   </div>
-//     <p>${recipe.description}</p>
-//     <p> <span>${recipe.rating}</span></p>
-//   </div>
-// </div>`
-// }
-
 function recipesTemplate(recipe) {
   return `
     <section class="media-card">

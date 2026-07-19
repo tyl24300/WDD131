@@ -1,0 +1,158 @@
+body {
+    background-color: #f9e0c3;
+}
+
+.logo {
+    text-align: right;
+    display: flex;
+    margin-left: auto;
+    padding: 10px;
+    display: block;
+    width: 45px;
+    height: 60px;
+    overflow: hidden;
+    -webkit-border-radius: 180px;
+    -moz-border-radius: 180px;
+    -ms-border-radius: 180px;
+    -o-border-radius: 180px;
+    border-radius: 180px;
+    border: 3px dotted white;
+}
+
+.musicImg {
+    width: 450px;
+    height: 350px;
+    padding: 20px;
+}
+
+dialog img { 
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+
+
+p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+footer {
+    padding: 15px;
+    display: flex;
+    background: linear-gradient(to right, #e06219, #551803);
+    padding: 5px;
+}
+
+.navigation {
+    display: flex;
+    background: linear-gradient(to right, #e06219, #551803);
+    padding: 20px;
+}
+
+.nav {
+    text-decoration: none;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 10px;
+}
+
+a:hover {
+    color: #fdd1c3;
+    font-weight: bolder;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.content p {
+    font-size: 30px;
+}
+
+#search {
+    width: 50%;
+}
+
+.select {
+    padding: 5px;
+}
+
+#card {
+    padding: 10px;
+    margin: 10px;
+}
+
+#searchbar {
+    background-color: #e39a70;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#searchbar:hover {
+    background-color: #9e5e38;
+}
+
+.explanation {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.imgtwo {
+    width: 200px;
+    height: 200px;
+}
+
+.form {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+@media screen and (min-width: 500px) and (max-width:1199px)
+{
+    .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+    .nav {
+        display: block;
+        width: 10%;
+        height: 10%;
+    }
+
+    a {
+        font-size: 10px;
+    }
+
+    h1, h2, p {
+        font-size: 10px;
+    }
+
+    img {
+        width: 10%;
+        height: 10%;
+    }
+}
